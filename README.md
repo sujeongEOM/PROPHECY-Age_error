@@ -29,7 +29,7 @@ Goal : Predicting age using EKG waveform data
 
 
 ## 2. Data Preprocessing
-1. Waveform Data
+> 1. Waveform Data
 - 500Hz / 10 sec / 12 leads
 - shape = (5000, 12)
 - Use only 8 leads (I, II, V1-V6) as other 4 leads are computed using these 8 leads
