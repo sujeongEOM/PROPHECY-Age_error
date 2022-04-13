@@ -1,6 +1,6 @@
 # PROPHECY-Age
 project start on 2022.03	   
-  
+Goal : Predicting age using EKG waveform data
      
      
 # Process of EKG projects
@@ -11,7 +11,7 @@ project start on 2022.03
   
   
 ## 1. Extraction difference with Dataset
-> 1. Sev MUSE EKG tsv (Train / Internal Validation)
+> 1. Severance MUSE EKG tsv (Train / Internal Validation)
 -- Whole data in huge single tsv file (220GB)
 - Each row equals one EKG file
 - There are pt overlap (as single pt takes many EKGs)
@@ -29,6 +29,12 @@ project start on 2022.03
 
 
 ## 2. Data Preprocessing
+1. Waveform Data
+- 500Hz / 10 sec / 12 leads
+- shape = (5000, 12)
+- Use only 8 leads (I, II, V1-V6) as other 4 leads are computed using these 8 leads
+- 0 padding on top 120 rows
+- final shape as input = (5120, 12)
 
 
 ## 3. Model Train, Test
