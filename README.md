@@ -6,7 +6,8 @@ project start on 2022.03
 # Process of EKG projects
 1. Extracting waveform, label table from XML or tsv; parsing and decoding
 2. Data preprocessing (check waveform shape, label null etc.)
-3. Model train, test
+3. Model train, test        
+
   
   
 ## 1. Extraction difference with Dataset
